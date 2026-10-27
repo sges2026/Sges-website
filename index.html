@@ -154,24 +154,42 @@
     <h2>Service Area</h2>
     <p>Based in Axson, GA. Mobile service across a 50-mile radius.</p>
     <div class="radius-map">
-      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="50-mile service radius from Axson, GA">
-        <rect width="400" height="400" fill="#122E22"/>
-        <circle cx="200" cy="200" r="160" fill="none" stroke="#B8860B" stroke-width="2" stroke-dasharray="4 4"/>
-        <circle cx="200" cy="200" r="64" fill="none" stroke="rgba(245,240,232,0.15)" stroke-width="1"/>
-        <circle cx="200" cy="200" r="32" fill="none" stroke="rgba(245,240,232,0.1)" stroke-width="1"/>
+      <svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="50-mile service radius from Axson, GA">
+        <rect width="400" height="420" fill="#122E22"/>
+        <!-- 50-mile circle -->
+        <circle cx="200" cy="190" r="155" fill="none" stroke="#B8860B" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <text x="200" y="28" text-anchor="middle" fill="rgba(245,240,232,0.55)" font-size="10" letter-spacing="0.12em" font-family="system-ui, sans-serif">50 MI RADIUS</text>
         <!-- Axson center -->
-        <path d="M200 188c0 0-10 10-10 16a10 10 0 0 0 20 0c0-6-10-16-10-16z" fill="#D4A017"/>
-        <circle cx="200" cy="204" r="3" fill="#1B4332"/>
-        <text x="200" y="228" text-anchor="middle" fill="#F5F0E8" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Axson</text>
+        <circle cx="200" cy="190" r="9" fill="#D4A017" stroke="#1B4332" stroke-width="2"/>
+        <text x="200" y="215" text-anchor="middle" fill="#F5F0E8" font-size="12" font-weight="700" font-family="system-ui, sans-serif">AXSON</text>
+        <!-- Cities within 50 miles (approximate relative positions) -->
         <!-- Pearson - west, close -->
-        <text x="145" y="210" text-anchor="middle" fill="rgba(245,240,232,0.75)" font-size="10" font-family="system-ui, sans-serif">Pearson</text>
+        <circle cx="155" cy="195" r="3.5" fill="#D4A017"/>
+        <text x="145" y="210" text-anchor="middle" fill="rgba(245,240,232,0.8)" font-size="9" font-family="system-ui, sans-serif">Pearson</text>
+        <!-- Willacoochee - west-northwest -->
+        <circle cx="140" cy="165" r="3" fill="#D4A017"/>
+        <text x="130" y="158" text-anchor="middle" fill="rgba(245,240,232,0.75)" font-size="8.5" font-family="system-ui, sans-serif">Willacoochee</text>
         <!-- Douglas - north -->
-        <text x="200" y="140" text-anchor="middle" fill="rgba(245,240,232,0.75)" font-size="10" font-family="system-ui, sans-serif">Douglas</text>
+        <circle cx="200" cy="135" r="3.5" fill="#D4A017"/>
+        <text x="200" y="125" text-anchor="middle" fill="rgba(245,240,232,0.8)" font-size="9" font-family="system-ui, sans-serif">Douglas</text>
         <!-- Waycross - east -->
-        <text x="280" y="210" text-anchor="middle" fill="rgba(245,240,232,0.75)" font-size="10" font-family="system-ui, sans-serif">Waycross</text>
-        <!-- Tifton - west, farther -->
-        <text x="90" y="175" text-anchor="middle" fill="rgba(245,240,232,0.55)" font-size="9" font-family="system-ui, sans-serif">Tifton</text>
-        <text x="200" y="380" text-anchor="middle" fill="rgba(245,240,232,0.45)" font-size="9" font-family="system-ui, sans-serif">50-mile radius from Axson</text>
+        <circle cx="255" cy="200" r="3.5" fill="#D4A017"/>
+        <text x="265" y="215" text-anchor="middle" fill="rgba(245,240,232,0.8)" font-size="9" font-family="system-ui, sans-serif">Waycross</text>
+        <!-- Blackshear - east-northeast -->
+        <circle cx="270" cy="170" r="3" fill="#D4A017"/>
+        <text x="280" y="165" text-anchor="middle" fill="rgba(245,240,232,0.7)" font-size="8.5" font-family="system-ui, sans-serif">Blackshear</text>
+        <!-- Alma - northeast -->
+        <circle cx="240" cy="145" r="3" fill="#D4A017"/>
+        <text x="250" y="138" text-anchor="middle" fill="rgba(245,240,232,0.7)" font-size="8.5" font-family="system-ui, sans-serif">Alma</text>
+        <!-- Homerville - south -->
+        <circle cx="195" cy="240" r="3" fill="#D4A017"/>
+        <text x="195" y="255" text-anchor="middle" fill="rgba(245,240,232,0.75)" font-size="8.5" font-family="system-ui, sans-serif">Homerville</text>
+        <!-- Nashville - southwest -->
+        <circle cx="145" cy="230" r="3" fill="#D4A017"/>
+        <text x="135" y="245" text-anchor="middle" fill="rgba(245,240,232,0.65)" font-size="8" font-family="system-ui, sans-serif">Nashville</text>
+        <!-- Scale label -->
+        <text x="200" y="390" text-anchor="middle" fill="#D4A017" font-size="28" font-weight="700" font-family="system-ui, sans-serif">50</text>
+        <text x="200" y="408" text-anchor="middle" fill="rgba(245,240,232,0.7)" font-size="10" letter-spacing="0.1em" font-family="system-ui, sans-serif">MILE RADIUS</text>
       </svg>
     </div>
   </div>
