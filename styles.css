@@ -68,32 +68,36 @@ header {
   color: var(--cream);
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
   justify-content: stretch;
   border-top: 1px solid rgba(245,240,232,0.1);
   border-bottom: 1px solid rgba(245,240,232,0.1);
+  overflow: hidden;
 }
 .trust-item {
-  flex: 1 1 0;
+  flex: 1 1 0%;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 14px 8px;
+  gap: 6px;
+  padding: 14px 6px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.01em;
   border-right: 1px solid rgba(245,240,232,0.2);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .trust-item:last-child { border-right: none; }
 .trust-item svg {
   flex-shrink: 0;
   stroke: var(--gold-light);
 }
-@media (max-width: 600px) {
-  .trust-item { font-size: 12px; padding: 12px 4px; gap: 6px; }
-  .trust-item svg { width: 16px; height: 16px; }
+@media (max-width: 640px) {
+  .trust-item { font-size: 11px; padding: 12px 4px; gap: 4px; }
+  .trust-item svg { width: 15px; height: 15px; }
 }
 
 section { padding: 56px 20px; }
