@@ -111,7 +111,13 @@ h2 { font-size: clamp(26px, 5vw, 34px); color: var(--navy); margin: 0 0 12px; }
 }
 .service-card h3 { margin: 0 0 8px; color: var(--forest); font-size: 20px; }
 .service-card .price { font-weight: 700; color: var(--gold); margin-bottom: 10px; }
-.service-card p { margin: 0; font-size: 15px; }
+.service-card .surcharge {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #3c463f;
+  border-top: 1px solid rgba(27,42,74,0.08);
+  padding-top: 12px;
+}
 
 .coverage { background: var(--forest-dark); color: var(--cream); }
 .coverage h2 { color: white; }
