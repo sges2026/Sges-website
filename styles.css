@@ -132,6 +132,13 @@ h2 { font-size: clamp(26px, 5vw, 34px); color: var(--navy); margin: 0 0 12px; }
   border-radius: 8px;
   display: block;
 }
+.map-disclaimer {
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(245,240,232,0.65);
+  text-align: center;
+  line-height: 1.4;
+}
 
 .cta-band {
   background: var(--forest);
