@@ -66,27 +66,34 @@ header {
 .trust {
   background: var(--navy);
   color: var(--cream);
-  padding: 16px 12px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  border-top: 1px solid rgba(245,240,232,0.1);
+  border-bottom: 1px solid rgba(245,240,232,0.1);
 }
 .trust-item {
+  flex: 1 1 0;
   display: flex;
   align-items: center;
-  gap: 6px;
-  border: 1px solid rgba(245, 240, 232, 0.35);
-  border-radius: 6px;
-  padding: 8px 12px;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 8px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.01em;
+  border-right: 1px solid rgba(245,240,232,0.2);
   white-space: nowrap;
 }
+.trust-item:last-child { border-right: none; }
 .trust-item svg {
   flex-shrink: 0;
   stroke: var(--gold-light);
+}
+@media (max-width: 600px) {
+  .trust-item { font-size: 12px; padding: 12px 4px; gap: 6px; }
+  .trust-item svg { width: 16px; height: 16px; }
 }
 
 section { padding: 56px 20px; }
@@ -107,9 +114,17 @@ h2 { font-size: clamp(26px, 5vw, 34px); color: var(--navy); margin: 0 0 12px; }
 
 .coverage { background: var(--forest-dark); color: var(--cream); }
 .coverage h2 { color: white; }
-.coverage p { opacity: 0.9; }
-.counties { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 16px; }
-.counties span { font-size: 14px; }
+.coverage p { opacity: 0.9; margin-bottom: 24px; }
+.radius-map {
+  max-width: 420px;
+  margin: 0 auto;
+}
+.radius-map svg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
 
 .cta-band {
   background: var(--forest);
